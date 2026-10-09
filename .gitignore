@@ -1,14 +1,40 @@
+# Secrets
 api.env
 .env
+.env.*
+!.env.example
 
-db.sqlite3
-
-venv/
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
 
+# Django
+db.sqlite3
+db.sqlite3-journal
 media/
 static/
-
-
 *.log
+local_settings.py
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
+Thumbs.db
+
+# Coverage / test
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
